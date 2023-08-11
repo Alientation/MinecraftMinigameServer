@@ -1,0 +1,67 @@
+main: me.Alientation.AlienPlugin.Main
+name: AlienPlugin
+version: "1.0.0"
+author: Alientation
+api-version: 1.16
+
+commands:
+  lobby:
+    description: "Teleports to the Lobby"
+    permission: alienplugin.lobby
+  chat:
+    description: "Chat options"
+    permission: alienplugin.chat
+  game:
+    description: "Game options"
+    permission: alienplugin.game
+  find:
+    description: "Find a player"
+    permission: alienplugin.find
+  world:
+    description: "World options"
+    permission: alienplugin.world
+  rank:
+    description: "Rank options"
+    permission: alienplugin.rank
+  mode:
+    description: "Gamemode options"
+    permission: alienplugin.mode
+  test:
+    description: "Test commands"
+    permission: alienplugin.test
+  coin:
+    description: "Coins Options"
+    permission: alienplugin.coin
+
+permissions:
+  alienplugin.*:
+    description: Allows every command
+    default: true
+    children:
+      alienplugin.lobby:
+        description: Allows player to travel to lobby
+        default: true
+      alienplugin.chat:
+        description: Allows player to access chat options
+        default: true
+      alienplugin.game:
+        description: Allows player to access game options
+        default: true
+      alienplugin.find:
+        description: Allows player to find other players
+        default: true
+      alienplugin.world:
+        description: Allows player to access world options
+        default: true
+      alienplugin.rank:
+        description: Allows player to access rank options
+        default: true
+      alienplugin.mode:
+        description: Allows player to access gamemode options
+        default: true
+      alienplugin.test:
+        description: Allows player to access test commands
+        default: true
+      alienplugin.coin:
+        description: Allows player to access coin commands
+        default: true
